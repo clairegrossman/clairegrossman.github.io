@@ -93,3 +93,94 @@ h2 {
   max-height: 100%
 }
 
+
+/*second card*/
+
+.card2 article {
+  height: 12em; /* 120px / 10px = 12em */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  color: #ccc;
+  line-height: 1.5;
+  font-family: cursive;
+}
+
+.card2 p {
+  padding: 1em
+
+}
+
+.card2 h2 {
+  font-size: 2em; /* 20px / 10px = 1.25em */
+  line-height: 1.5; /* Adjust for centering */
+  font-family: cursive;
+
+}
+
+
+/* Selectors to be matched up with rulesets */
+.card2 header h2, 
+.card2 footer p {
+  margin: 0; /* Remove default margin */
+}
+
+.card2 header,
+.card2 footer {
+  height: 1.75em; /* 50px / 16px = 3.125em */
+  padding: 1em; /* 10px / 16px = 0.625em */
+  /* Additional styles as needed */
+}
+
+
+/* .card article img
+.card footer
+.card header
+.card */
+
+/* Rulesets to be matched up with selectors */
+
+.card2 {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: purple;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+  
+}
+
+.card2 header { 
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+  
+
+  /* padding: 0.625em; 10px / 16px = 0.625em */
+  /* Additional styles for the content within the header and footer */
+  /* line-height: 1.5; Adjust as needed for your content */ 
+  
+}
+
+.card2 footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4em; 
+  line-height: 0em;
+  font-family: cursive;
+
+  /* Additional styles for the content within the header and footer */
+  /* line-height: 2 ; Adjust as needed for your content */
+  /* font-size: 0.9375em; 15px / 16px = 0.9375em */
+}
+
+/* Target the card header and footer */
+
+
+/* Target all <h2> and <p> elements within the card */
+
+
+.card2 article img {
+  float: right;
+  max-height: 100%
+}
+
