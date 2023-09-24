@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* General styles */
 
 body {
   margin: 0;
@@ -10,13 +10,15 @@ html {
   background-color: #ccc;
 }
 
+/*for styling article middle section*/
 article {
   height: 12em; /* 120px / 10px = 12em */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
-  color: #ccc;
+  color: #ccc; /*text color*/
   line-height: 1.5;
 }
 
+/* line up with heading*/
 article p {
   padding: 1em
 
@@ -27,7 +29,8 @@ h2 {
   line-height: 1.5; /* Adjust for centering */
 
 }
-/* Selectors to be matched up with rulesets */
+
+
 .card header h2, 
 .card footer p {
   margin: 0; /* Remove default margin */
@@ -35,18 +38,12 @@ h2 {
 
 .card header,
 .card footer {
-  height: 1.75em; /* 50px / 16px = 3.125em */
-  padding: 1em; /* 10px / 16px = 0.625em */
+  height: 1.75em; /* 50px / 10px = 5em */
+  padding: 1em; /* 10px / 10px = 1em */
   /* Additional styles as needed */
 }
 
 
-/* .card article img
-.card footer
-.card header
-.card */
-
-/* Rulesets to be matched up with selectors */
 
 .card {
   width: 35em;
