@@ -32,37 +32,35 @@
 
 <h3><u>Page 1</u></h3>
 <ul>
-    <li>The language of the page was not defined so since it was written in english I defined it as lang="en"</li>
-    <li>The doctype was not defined before the start tag so I added DOCTYPE as html before the head tag</li>
-    <li>On line 81 there was a typo for italisizing the text so I corrected "crème fraiche" to be within the "em" element </li>
-    <li>There was an error on line 75 because the p tag was no correctly closed so I added the closing p tag</li>
+    <li>The error was that the start tag for h2 was seen in the table. To fix this I added a closing tr tag and closing table tag above the h2 element. </li>
+    <li>One of the items in the unordered list was missing its closing li tag so I added it. </li>
+    <li> In the table one of the cells was left open so I added its missing closing td tag. </li>
+    <li>Line 30 was missing a closing p tag for the paragraph so I corrected that.</li>
+    <li>The document is written in English so I defined the language using lang="em" in the html tag at the start of the code.</li>
 </ul>
 
 <h3><u>Page 2</u></h3>
 <ul>
-    <li>On line 27 the bolding element for "New Beehive Inn" was imcomplete so I added the closing b tag</li>
-    <li>h2 is not allowed as a child element of b so I moved the bolding tag inside the h2 element </li>
+    <li>On line 27 the bolding element for "New Beehive Inn" was imcomplete so I added the missing /b in the closing tag.</li>
+    <li>There was an error because h2 is not allowed as a child element of b so I moved the bolding tag inside the header 2 element. </li>
     <li> There was an error with the href link "where do I go" on line 57 because there was no link provided. I replaced it with a link to the wikipedia page for segmental arches</li>
-    <li>There was another error with the link on line 41 "brokenlink.com" becuase the webiste didnt exist so I replaced it with a link the the wikipedia page for "bay"</li>
+    <li>There was no closing tag for the history header so first I corrected that. Then I noticed that it was the only section title using h6 so I changed it to h2 to match the rest of the document. </li>
+    <li>Some sections but not all had hr elements to create a break between bodies of text so I rearranged and added a couple hr elemtns to have consistent organization.</li>
 </ul>
 
 <h3><u>Page 3</u></h3>
 <ul>
-    <li>There was a problem with the list item on line 53 because there was an "l" tag instead of an "li" tag, so I changed it to an "li" tag</li>
-    <li> Inside the table there was a table header tag (th) where there should've been just a td tag since it was just a data cell in the table not a header, so I switched th to td.</li>
-    <li>On line 85 the name "Lily" was missing its closing tag for its position in the table. I added the missing "td" closing tag.</li>
-    <li>The names and ages were not correctly grouped in the table to I reorganized so that each row (tr) had a first name, last name, and age. </li>
-    <li> On line 98 the start tag for "td" was inside the table body, so I indented it</li>
+    <li>The error was the the start tag was seen with out defining the doctype so I corrected it to say that the doctype was html as the first line of code.</li>
+    <li> The head element was empty so I added meta data including characterset and viewing information. I also added a title and linked the css style sheet.</li>
+    <li>- [ ] The footer was interfering with other sections on the page, above the form and not at the foot of the page. I changed the position from absolute to bottom on the style sheet.</li>
 </ul>
 
 <h3><u>Page 4</u></h3>
 <ul>
     <li> The doctype was not defiend before the start tag to I added "!DOCTYPE html" as the first line of code</li>
     <li> each image was missing its alt text so I added a description of each image using alt="description"</li>
-    <li> Line 43 was missing a td element so I added it surrounding the image tag</li>
-    <li> Line 48 only had a closing td tag so I added the missing start tag</li>
-    <li> The grid of pictures was wonky to start so I made sure each image had a start and close td tag to create a 3x3 grid of images </li>
-
+    <li> Some images were missing parts of a td element. I made sure each image had a td element to correct the grid</li>
+    <li> I rearranged where the images were placed in the grip so they corresponded with the correct title.</li>
 </ul>
 
 </body>
