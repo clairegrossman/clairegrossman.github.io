@@ -1,0 +1,77 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .table4 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: black;
+    font-size: 20px;
+  }
+  
+  .table3 {
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+    background-color: black;
+    font-size: 20px;
+  }
+
+  .table2 {
+    position: absolute;
+    bottom: 52px;
+    left: 16px;
+    background-color: black;
+    font-size: 20px;
+  }
+  .table1 {
+    position: absolute;
+    bottom: 74px;
+    left: 16px;
+    background-color: black;
+    font-size: 20px;
+  }
+
+  .scoring {
+    position: absolute;
+    bottom: 100px;
+    left: 16px;
+    background-color: black;
+    font-size: 20px;
+  }
+
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: red;
+    font-size: 30px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
