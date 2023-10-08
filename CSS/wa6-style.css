@@ -4,11 +4,19 @@
     text-align: center;
     color: white;
   }
-  
+
+  .imtip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20%;
+    background-color: white;
+  }
+
   /* Bottom left text */
   .table4 {
     position: absolute;
-    bottom: 8px;
+    bottom: 18px;
     left: 16px;
     background-color: black;
     font-size: 20px;
@@ -16,7 +24,7 @@
   
   .table3 {
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     left: 16px;
     background-color: black;
     font-size: 20px;
@@ -24,14 +32,14 @@
 
   .table2 {
     position: absolute;
-    bottom: 52px;
+    bottom: 62px;
     left: 16px;
     background-color: black;
     font-size: 20px;
   }
   .table1 {
     position: absolute;
-    bottom: 74px;
+    bottom: 84px;
     left: 16px;
     background-color: black;
     font-size: 20px;
@@ -39,7 +47,7 @@
 
   .scoring {
     position: absolute;
-    bottom: 100px;
+    bottom: 110px;
     left: 16px;
     background-color: black;
     font-size: 20px;
@@ -48,18 +56,12 @@
   /* Top left text */
   .top-left {
     position: absolute;
-    top: 8px;
+    top: 18px;
     left: 16px;
     background-color: red;
     font-size: 30px;
   }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
+
   
   /* Bottom right text */
   .bottom-right {
