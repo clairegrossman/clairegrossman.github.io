@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsalmon;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(80, 16, 112)
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:lavender;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav:hover {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    width:40vw;
+
+}
+
+#floating-ghost{
+    width: 10px;
+
+    position: absolute;
+    left:0;
+    bottom:0;
+    /* animation-duration: 2s;
+    animation-name: floatingGhost;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: float 2s linear infinite;
+}
+
+
+#floating-ghost {
+    width: 100px;
+    background: image();
+    background-size: cover;
+    position: absolute;
+    animation: float 3s alternate-reverse infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(750px,0);
+    }
+}

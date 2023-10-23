@@ -33,10 +33,10 @@ body{
     50% {
         background-color: lightblue;
         margin-left:50%;
+        font-size: 20
     }
 
     to {
         margin-top: 0%
     }
-
 }
