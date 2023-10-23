@@ -52,6 +52,8 @@ img{
     background-size: cover;
     position: absolute;
     animation: float 3s alternate-reverse infinite;
+    transition: opacity ,1s;
+    opacity: 1;
 }
 
 @keyframes float {
@@ -62,4 +64,8 @@ img{
     100% {
         transform: translate(750px,0);
     }
+}
+
+#floating-ghost:hover {
+    opacity: .2;
 }
