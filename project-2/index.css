@@ -1,0 +1,114 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .event1 { grid-area: 1 / 1 / 2 / 2; }
+  .event2 { grid-area: 1 / 2 / 2 / 3; }
+  .event3 { grid-area: 1 / 3 / 2 / 4; }
+  .event4 { grid-area: 2 / 1 / 3 / 2; }
+  .event5 { grid-area: 2 / 2 / 3 / 3; }
+  .event6 { grid-area: 2 / 3 / 3 / 4; }
+
+.title {
+    background-color: #E0CA3C;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    padding: 10px;
+    height: fit-content;
+  }
+
+
+.intro {
+  background-color:#A799B7 ;
+  border: 10px solid black;
+  padding: 2vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info {
+  background-color:#A799B7 ;
+  border: 2px solid black;
+  padding: 2vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.event1{
+  background-color: #048A81;
+  border: 5px dotted black;
+  padding: 15px;
+}
+
+.event1:hover {
+  background-color: #E0CA3C;
+}
+
+.event2 {
+  background-color: #A799B7;
+  padding: 15px;
+ }
+ .event2:hover {
+  background-color: #E0CA3C;
+}
+
+ .event3{
+  background-color: #048A81;
+  border: 5px dotted black;
+  padding: 15px;
+}
+.event3:hover {
+  background-color: #E0CA3C;
+}
+.event4 {
+  background-color: #A799B7;
+  padding: 15px;
+ }
+ .event4:hover {
+  background-color: #E0CA3C;
+}
+ .event5{
+  background-color: #048A81;
+  border: 5px dotted black;
+  padding: 15px;
+}
+.event5:hover {
+  background-color: #E0CA3C;
+}
+.event6 {
+  background-color: #A799B7;
+  padding: 15px;
+ }
+ .event6:hover {
+  background-color: #E0CA3C;
+}
+ .event7{
+  background-color: #048A81;
+  border: 5px dotted black;
+  padding: 15px;
+}
+.event7:hover {
+  background-color: #E0CA3C;
+}
+.event8 {
+  background-color: #A799B7;
+  padding: 15px;
+ }
+ .event8:hover {
+  background-color: #E0CA3C;
+}
+ .event9{
+  background-color: #048A81;
+  border: 5px dotted black;
+  padding: 15px;
+}
+.event9:hover {
+  background-color: #E0CA3C;
+}
