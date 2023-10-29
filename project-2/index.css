@@ -11,6 +11,9 @@
   .event4 { grid-area: 2 / 1 / 3 / 2; }
   .event5 { grid-area: 2 / 2 / 3 / 3; }
   .event6 { grid-area: 2 / 3 / 3 / 4; }
+  .event7 { grid-area: 3 / 1 / 4 / 2; }
+  .event8 { grid-area: 3 / 2 / 4 / 3; }
+  .event9 { grid-area: 3 / 3 / 4 / 4; }
 
 .title {
     background-color: #E0CA3C;
@@ -63,4 +66,11 @@ p {
 
 .event1:hover, .event2:hover,.event3:hover,.event4:hover,.event5:hover,.event6:hover,.event7:hover,.event8:hover,.event9:hover {
   background-color: #E0CA3C;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    display: block;
+  
+}
 }
