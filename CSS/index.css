@@ -16,7 +16,7 @@
   .event9 { grid-area: 3 / 3 / 4 / 4; }
 
 .title {
-    background-color: #E0CA3C;
+    background-color: #30638E;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 200%;
@@ -26,7 +26,7 @@
 
 
 .intro {
-  background-color:#A799B7 ;
+  background-color:#D1495B ;
   text-align: center;
   border: 10px solid black;
   padding: 2vw;
@@ -34,7 +34,7 @@
 }
 
 .info {
-  background-color:#A799B7 ;
+  background-color:#3e9ccb ;
   text-align: center;
   border: 10px solid black;
   padding: 2vw;
@@ -60,19 +60,54 @@ li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .event1, .event3, .event5, .event7, .event9{
-  background-color: #048A81;
+  background-color: #30638E;
   border: 10px dotted black;
   padding: 15px;
 }
 
 .event2, .event4, .event6, .event8 {
-  background-color: #A799B7;
+  background-color: #3e9ccb;
   padding: 15px;
  }
 
 .event1:hover, .event2:hover,.event3:hover,.event4:hover,.event5:hover,.event6:hover,.event7:hover,.event8:hover,.event9:hover {
-  background-color: #E0CA3C;
+  background-color: #D1495B;
 }
+
+/* styles.css */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-bar {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #717171;
+}
+
 
 @media only screen and (max-width: 500px) {
   .grid {
