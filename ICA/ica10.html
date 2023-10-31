@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        button, div {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+            cursor: pointer;
+            background-color: aqua;
+            padding: 3px 10px;
+            height: 100px;
+
+        }
+
+        img {
+            height: 300px;
+        }
+    </style>
+<body>
+
+    <h1>JAVA Interactive Elements</h1>
+    <p id="textElement">Click the button to change this text!</p>
+    <p> Click baby Jabba to see him grow</p>
+    <button id="changeText">Change Text</button>
+    <img id="imageElement" src="../img/jabbaBaby.jpg" alt="Image">
+
+    <script>
+        // change text when button is clicked
+        document.getElementById("changeText").addEventListener("click", function () {
+            const textElement = document.getElementById("textElement");
+            textElement.textContent = "BAM! look I changed!";
+        }
+        );
+
+        // change the image source when img is clicked
+        document.getElementById("imageElement").addEventListener("click", function () {
+            const imageElement = document.getElementById("imageElement");
+            imageElement.src = "../img/Jabba.jpeg";
+        }
+        );
+
+    </script>
+</body>
+</html>
