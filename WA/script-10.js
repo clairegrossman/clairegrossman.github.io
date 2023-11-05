@@ -11,10 +11,10 @@ function randomeValueFromArray(array) {
 }
 
 //variables to declare
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day."
-const insertx = ["Willy the Goblin","Big Daddy","Father Christmas"]
-const inserty = ["the soup kitchen","Disneyland","the White House"]
-const insertz = ["spontaneously combusted","melted into a puddle on the sidewalk","turned into a slug and crawled away"]
+let storyText = "In a galaxy far, far away, there was a young Jedi named Bob :insertx:. They were known for their incredible talent in the Force, especially their ability to :inserty:. One day, Bob :insertx: received a message from a little droid. The message contained an urgent plea for help from Princess Leia. She was being held captive by Darth Vader in a :insertz: , and only Bob :insertx: could save her. After a sweaty lightsaber battle in 98 degree heat, Bob :insertx: managed to rescue Princess Leia and defeat Darth Vader. The galaxy was saved, and everyone celebrated with a big party on the planet Tatooine. "
+const insertx = ["Skywalker","Windu","Kenobi"]
+const inserty = ["read the minds of goldfish","juggle flaming marshmallows blindfolded","win thumb-wrestling matches against giants"]
+const insertz = ["funhouse mirror maze","giant bubblegum bubble","jammed elevator stuck between floors"]
 
 //event listener
 randomize.addEventListener('click', result);
@@ -40,7 +40,7 @@ function result() {
         const weight = Math.round(300/2.205) + "kilograms";
         const temperature =  Math.round((94-32)*5/9)+ "celcius";
         newStory = newStory.replace('300 pounds', yItem);
-        newStory = newStory.replace('94 Farenheight', zItem);
+        newStory = newStory.replace('98', '37');
     
       }
     

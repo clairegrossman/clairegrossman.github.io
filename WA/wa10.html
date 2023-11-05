@@ -9,7 +9,9 @@
     <style>
       body {
         font-family: helvetica, sans-serif;
-        width: 350px;
+        background-image: url("../img/hyperspace.jpg.avif");
+        background-color: #cccccc;
+
       }
 
       label {
@@ -18,19 +20,51 @@
 
       div {
         padding-bottom: 20px;
+        position: relative;
       }
 
       input[type="text"] {
         padding: 5px;
         width: 150px;
+        display: grid;
+        justify-content: center;
       }
 
       p {
         background: #ffc125;
-        color: #5e2612;
+        color: black;
         padding: 10px;
         visibility: hidden;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
       }
+
+      label {
+        color: white
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      button:hover {
+        background-color: green;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    
     </style>
   </head>
 
@@ -45,11 +79,15 @@
       <label for="uk">UK</label
       ><input id="uk" type="radio" name="ukus" value="uk" />
     </div>
-    <div>
+    <div class="center">
       <button class="randomize">Generate random story</button>
+      
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-    <p class="story"></p>
+    <div class="center">
+        <p class="story"></p>
+    </div>
+    
   </body>
 
   <script src="script-10.js"></script>
