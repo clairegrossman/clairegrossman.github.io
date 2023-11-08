@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Calendar</title>
+  <style>
+    /* CSS Styles for the Calendar */
+
+
+body {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+select {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  grid-gap: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+li {
+  font-size: 16px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+li:nth-child(7n + 1) {
+  background-color: #2196F3; /* b;ue on Sundays */
+  color: white;
+}
+
+li:hover {
+  background-color: #FF5733;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Select a Month:</h1>
+  <select>
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select>
+
+  <h1></h1>
+  <ul></ul>
+
+  <script src="calender.js"></script>
+</body>
+</html>

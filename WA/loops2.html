@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guest List</title>
+</head>
+<body>
+    <p>Guests Admitted:</p>
+    <p id="admitted"></p>
+
+    <p>Guests Refused:</p>
+    <p id="refused"></p>
+
+    <script>
+        // The list of names stored in an array
+        const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+        // Initialize admitted and refused paragraphs' textContent
+        const admitted = document.getElementById("admitted");
+        const refused = document.getElementById("refused");
+        admitted.textContent = "";
+        refused.textContent = "";
+
+        // Iterate through the people array
+        for (const i = 0; i < people.length; i++) {
+            const currentName = people[i];
+
+            // Check if the current name is "Phil" or "Lola"
+            if (currentName === "Phil" || currentName === "Lola") {
+                // Add the name to the refused paragraph
+                refused.textContent += currentName + ", ";
+            } else {
+                // Add the name to the admitted paragraph
+                admitted.textContent += currentName + ", ";
+            }
+        }
+
+        // Remove the trailing comma and space from both paragraphs
+        admitted.textContent = admitted.textContent.slice(0, -2);
+        refused.textContent = refused.textContent.slice(0, -2);
+    </script>
+</body>
+</html>

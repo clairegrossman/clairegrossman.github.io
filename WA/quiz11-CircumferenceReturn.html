@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Circle Circumference Calculator</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+</head>
+<body>
+  <input class="radiusInput" type="text">
+  <p></p>
+  <script>
+    const input = document.querySelector('.radiusInput');
+    const para = document.querySelector('p');
+
+    function calculateCircumference(radius) {
+      // Formula for circumference: 2 * π * radius
+      const circumference = 2 * Math.PI * radius;
+      return circumference;
+    }
+
+    input.addEventListener("change", () => {
+      const radius = parseFloat(input.value);
+      if (isNaN(radius)) {
+        para.textContent = "You need to enter a valid radius!";
+      } else {
+        const circumference = calculateCircumference(radius);
+        para.textContent = `The circumference of a circle with a radius of ${radius} is ${circumference.toFixed(2)}.`;
+      }
+    });
+  </script>
+</body>
+</html>
