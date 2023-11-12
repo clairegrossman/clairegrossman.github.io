@@ -5,10 +5,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const images = [`sunglassChick.jpg`, `fightChick.jpg`, `skateChick.jpg`, `sweaterChick.jpg`, `staringChick.jpg`];
+const images = [`colloseum.JPG`, `charcuterie.jpg`, `cat.jpeg`, `umbrellas.jpg`, `venice.JPG`];
 
 /* Declaring the alternative text for each image file */
-const alts = {'sunglassChick.jpg' : 'Chicken wearing sunglasses','fightChick.jpg' : 'Chicken holding sword','skateChick.jpg' : 'chicken on little skateboard','sweaterChick.jpg' : 'chickens wearing sweaters','staringChick.jpg' : 'chicken staring at camera up close '}
+const alts = {'colloseum.JPG' : 'Colloseum in Rome','charcuterie.jpg' : 'Cheese and meat platter','cat.jpeg' : 'cat stretching on stone wall','umbrellas.jpg' : 'striped umbrellas on the beach','venice.JPG' : 'godolas in venice canal'}
 
 /* Looping through images */
 

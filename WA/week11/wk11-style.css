@@ -7,7 +7,7 @@ h1 {
 body {
   width: 640px;
   margin: 0 auto;
-  background-color: rgb(204, 107, 107);
+  background-color: rgb(170, 121, 189);
 }
 
 .full-img {
@@ -15,7 +15,7 @@ body {
   display: block;
   width: 565px;
   height: 403px;
-  border: 20px double rgba(225, 225, 22, 0.87);
+  border: 20px double beige;
 }
 
 .displayed-img {
