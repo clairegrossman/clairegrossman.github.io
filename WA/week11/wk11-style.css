@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: green;
+  background-color: rgba(0, 0, 255, 0.617);
 }
 
 .thumb-bar img {
