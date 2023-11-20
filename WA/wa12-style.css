@@ -18,10 +18,10 @@
         background-color: #fff;
         height: 30px;
         margin: auto;
-        display: flex;
         width:640px;
         padding: 15px;
         border: 5px dotted black;
+
   
       }
   
@@ -31,10 +31,11 @@
         background-color:#6f8f72;
       }
       #image{
-        width:100%;
+        width: 680px;;
         height:500px;
         border:5px solid #fff;
         box-sizing: border-box;
+        /* position: fixed; */
       }
   
       #button{
@@ -48,4 +49,6 @@
         cursor:pointer;
         background-color:#fff;
         color:#000;
+        bottom: 5px;
+
       }
