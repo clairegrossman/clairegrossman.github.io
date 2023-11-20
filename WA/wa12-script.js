@@ -23,5 +23,28 @@ async function getRandomDog() {
 function displayImage(image_url){
     document.getElementById("image").src = image_url;
   }
+
+displayImage()
   
-getRandomDog()
+
+// async function renderDogs()
+// {
+//     let dogs = await getRandomDog();
+//     var dog =[];
+//     dog = new Image();//created the image object
+//     dog.src = dogs.message;///taking the image path
+//     dog.width="500";
+//     dog.height="300";
+//     var images = document.getElementsByTagName('img');
+//     ///limit the image display on screen
+//     var l=images.length;
+//     if(l>3)
+//     {
+//         for(var p=0;p<l;p++)
+//         {
+//             images[0].parentNode.removeChild(images[0]);
+//         }
+//     }
+
+//     document.body.appendChild(dog);
+// }
