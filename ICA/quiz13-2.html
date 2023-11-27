@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Exercise</title>
+</head>
+<body>
+    <h1>Cats Information</h1>
+    <div id="catInfo"></div>
+
+    <script>
+
+        const section = document.querySelector('section');
+
+        let para1 = document.createElement('p');
+        let para2 = document.createElement('p');
+        let motherInfo = 'The mother cats are called ';
+        let kittenInfo;
+        const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
+
+        fetch(requestURL)
+        .then(response => response.text())
+        .then(text => displayCatInfo(text))
+        
+        function displayCatInfo() {
+            // Assuming this is the JSON data provided in the exercise
+            var catString = '{"cats": [{"name": "Cat1", "kittens": [{"name": "Kitten1", "gender": "male"}, {"name": "Kitten2", "gender": "female"}]}, {"name": "Cat2", "kittens": [{"name": "Kitten3", "gender": "female"}]}, {"name": "Cat3", "kittens": [{"name": "Kitten4", "gender": "male"}, {"name": "Kitten5", "gender": "male"}]}]}';
+
+            // Parse the JSON string into an object
+            var catData = JSON.parse(catString);
+
+            // Variables to store cat and kitten information
+            var motherInfo = "";
+            var totalKittens = 0;
+            var maleKittens = 0;
+            var femaleKittens = 0;
+
+            // Loop through the mother cats
+            for (var i = 0; i < catData.cats.length; i++) {
+                motherInfo += catData.cats[i].name;
+
+                // Check if there are more mother cats
+                if (i < catData.cats.length - 1) {
+                    motherInfo += ", ";
+                } else {
+                    motherInfo += " and ";
+                }
+            }
+
+            // Loop through the kittens
+            for (var i = 0; i < catData.cats.length; i++) {
+                totalKittens += catData.cats[i].kittens.length;
+
+                // Count male and female kittens
+                for (var j = 0; j < catData.cats[i].kittens.length; j++) {
+                    if (catData.cats[i].kittens[j].gender === "male") {
+                        maleKittens++;
+                    } else {
+                        femaleKittens++;
+                    }
+                }
+            }
+
+            // Create paragraphs to display information
+            var para1 = document.createElement("p");
+            para1.textContent = "Mother cats: " + motherInfo.slice(0, -5) + ".";
+            var para2 = document.createElement("p");
+            para2.textContent = "Total kittens: " + totalKittens + ", Male kittens: " + maleKittens + ", Female kittens: " + femaleKittens + ".";
+
+            // Get the catInfo div and append the paragraphs
+            var catInfoDiv = document.getElementById("catInfo");
+            catInfoDiv.appendChild(para1);
+            catInfoDiv.appendChild(para2);
+        }
+
+        // Call the function to display cat information
+        displayCatInfo();
+    </script>
+</body>
+</html>
+
