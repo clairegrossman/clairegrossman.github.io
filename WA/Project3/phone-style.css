@@ -1,6 +1,6 @@
 
-
 body {
+  /* use flex */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,37 +17,35 @@ body {
 
   #container {
     position: relative;
-    width: 500px;
-    height: 300px;
-    border: 5px solid #ccc;
+    width: 700px;
+    height: 600px;
+    border: 10px solid #ccc;
     overflow: hidden;
     margin-bottom: 20px;
   }
 
   .circle {
+    /* make circles bigger? */
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 24px;
     cursor: grab;
   }
 
-  .phoneNumberInput {
-    font-size: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .phoneNumberInput input {
-    width: 40px;
+/* make input box larger*/
+/* change '.' to '#' not class*/
+  #phoneNumberInput {
+    width: 360px; 
+    height: 60px; 
+    font-size: 36px; 
     text-align: center;
-    margin-right: 5px;
-    padding: 3px;
+    margin-right: 15px;
+    padding: 9px;
+    border: 5px solid #ccc
   }
 
   button {
