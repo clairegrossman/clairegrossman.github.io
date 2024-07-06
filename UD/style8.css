@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 /* || General setup */
 
 html, body {
@@ -56,13 +59,6 @@ header {
   flex-flow: row wrap;
 }
 
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 body > * {
   background-color: red;
   padding: 1%;
@@ -116,9 +112,11 @@ nav a, nav span {
 
 /* || main layout */
 
+/* original main style
 main {
   display: flex;
-}
+} 
+ */
 
 article, section {
   flex: 4;
@@ -143,3 +141,19 @@ aside img {
 footer {
   margin-top: 10px;
 }
+
+/* HK additions */
+
+main {
+  flex: 3;
+}
+
+.flex-container {
+  background-color: rgba(0, 255, 0, 0.5); 
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
