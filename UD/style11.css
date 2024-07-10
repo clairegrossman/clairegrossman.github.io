@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
+/* General styling */
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: rgb(210, 229, 210); /* Light green background */
+    color: darkgreen;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: xx-large;
+    color: black; 
+    text-align: center;
+}
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+    background-color: #ffffff; /* White background for the form */
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+div#formcol1, div#multchoice {
+	width: 100%;
+}
+
+
+label {
+    margin-right: .3em;
+    width: 5em; 
+    display: inline-block; /* width will not work for “inline” elements such as
+    “label”. Therefore we need to set it to “inline-block” */
+
+    font-weight: bold; /*style*/
+}
+
+fieldset {
+    border: 2px solid #ffd700; 
+    border-radius: 8px;
+    padding: 1em;
+}
+
+legend {
+    color: black; 
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Baloo 2', cursive;
+}
+
+#formcol1 li {
+list-style:none;
+}
+
+#formcol1 input.reqfield {
+    background:#fff5e1;;
+    }
+
+input[type="text"], input[type="submit"], select {
+    font-family: 'Baloo 2', cursive;
+}
+
+input[type="text"], select {
+    width: calc(100% - 6.5em);
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: .3em;
+    background-color: rgb(237, 249, 237); /* light peach background for input fields */
+}
+
+/* submit button */
+input[type="submit"] {
+    background-color: darkgreen; 
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+/* when sybmit button is hovered over it changes */
+input[type="submit"]:hover {
+    background-color: black; 
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: darkgreen !important
+}
+
+/* end of form css */
+	
