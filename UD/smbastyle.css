@@ -98,7 +98,7 @@ nav .nav-links .register-link {
     height: 50vh; /* Adjust height as needed */
     overflow: hidden;
     position: relative;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .carousel-inner {
@@ -125,7 +125,7 @@ nav .nav-links .register-link {
 
 .headings-container {
     text-align: center;
-    margin: 20px;
+    margin: 40px;
 }
 
 .headings-container h1 {
