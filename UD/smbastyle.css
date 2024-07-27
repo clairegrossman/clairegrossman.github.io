@@ -38,12 +38,14 @@ nav .nav-links a {
     padding: 10px 15px;
 }
 
-nav .nav-links a:hover {
+nav .nav-links a:hover, nav .nav-links a:focus {
     background-color: #575757;
     border-radius: 4px;
 }
 
-nav .dropdown:hover .dropdown-content {
+/* Dropdown styles */
+nav .dropdown:hover .dropdown-content,
+nav .dropdown:focus-within .dropdown-content {
     display: block;
 }
 
@@ -70,7 +72,7 @@ nav .dropdown-content a {
     display: block;
 }
 
-nav .dropdown-content a:hover {
+nav .dropdown-content a:hover, nav .dropdown-content a:focus {
     background-color: #575757;
 }
 
@@ -265,4 +267,24 @@ footer {
 
 .footer-right button:hover {
     background-color: darkorange;
+}
+
+/* Ensure all focusable elements get outlined when focused */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #fff; /* Adjust color and width as needed */
+    outline-offset: 2px;
+}
+
+/* Make dropdowns accessible with keyboard navigation */
+nav .dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a:focus + .dropdown-subcontent,
+nav .dropdown-content a:hover + .dropdown-subcontent {
+    display: block;
 }
